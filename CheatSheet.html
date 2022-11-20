@@ -76,6 +76,23 @@
         The <strong>HTML links</strong> <code>&lt;a&gt;</code> lead to a link which is specified in the href attribute (href="").<br>
         HTML <strong>images</strong> <code>&lt;img&gt;</code> are able to show source file (src=""), alternative text (alt=""), width="" and height="". <br>
         The <strong>meta element</strong> <code>&lt;meta&gt;</code> is typically used to specify the character set (charset="UTF-8"), page description, keywords and viewport settings. The metadata will not be displayed, but is used by browsers how to display content or reload page.<br>
+        <h3>HTML Lists</h3>
+        <strong>HTML Lists</strong> allow web developers to group a set of related items in lists.<br>
+        An <strong>unordered list</strong> starts with the <code>&lt;ul&gt;</code> tag. Each list item starts with the <code>&lt;li&gt;</code> tag.<br>
+        The list items will be marked with bullets (small black circles) by default.<br>
+        An <strong>ordered list</strong> starts with the <code>&lt;ol&gt;</code> tag. Each list item starts with the <code>&lt;li&gt;</code> tag.<br>
+        The list items will be marked with numbers by default.<br>
+        A <strong>description list</strong> is a list of terms, with a description of each term.<br>
+        The <code>&lt;dl&gt;</code> tag defines the description list, the <code>&lt;dt&gt;</code> tag defines the term, and the <code>&lt;dd&gt;</code> tag describes each term.<br>
+        HTML List can be nested (list inside list).<br>
+        <h3>HTML Tables</h3>
+        <strong>HTML tables</strong> allow web developers to arrange data into rows and columns. A table in HTML consists of table cells inside rows and columns.<br>
+        A table starts with the <code>&lt;table&gt;</code> tag. Each table cell is defined by a <code>&lt;td&gt;</code> tag, wich stands for table data (content of a cell). <br>
+        Each table row starts with a <code>&lt;tr&gt;</code> tag (tr stands for table row). You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row.<br>
+        If you want your cells to be table header cells, use the <code>&lt;th&gt;</code> tag (stands for table header) instead of the <code>&lt;td&gt;</code> tag.<br>
+        Use the <strong>caption</strong> rag to define a table caption. <code>&lt;caption&gt;</code>. It must be inserted immediately after the table tag.<br>
+        
+
 
         <hr>
         <h1>CSS</h1>
@@ -104,7 +121,19 @@
         <strong>The font-size </strong>property sets the size of the text (default is 16px = 1em). e.g. font-size: 40px; or font-size: 2.5em;<br>
         <strong>The font-weight </strong>property specifies the weight of a font. e.g. font-weight: normal; or font-weight: bold;<br>
         <strong>Links</strong> can be styled with any CSS property (color, font-family, background...). Link states: a:link, a:visited, a:hover, a:active.<br>
+        <h3>CSS for Lists</h3>
+        The <strong>list-sytle-type property</strong> specifies the type of list item marker. e.g. list-style-type: circle, square, upper-roman;<br>
+        The <strong>list-style-image property</strong> specifies an image as the list item marker. e.g. list-style-image: url('bsp.gif');<br>
+        The <strong>list-style-position property</strong> specifies the position of the list-item markers (bullet points). <strong>list-style-position: outside;</strong> means that the bullet points will be outside the list item. The start of each line of a list item will be alligned vertically.<br>
+        <strong>list-style-position: inside;</strong> means that the bullet points will be inside the list item. As it's part of the list item, it will be part of the text and push the text at the start.<br>
+        The <strong>list-style-type: none; property</strong> can be used to remove the markers/bullets. A list has default margin and padding. In order to remove this, add margin:0 and padding:0.<br>
+        <h3>CSS for Tables</h3>
+        The <strong>border </strong>property specifies table borders ind CSS. e.g. border: 1px solid;<br>
+        The <strong>border-collapse</strong> property sets whether the table borders should be collapsed into a single border. e.g. border-collapse: collapse;<br>
+        If you want to create a table that should span the entire screen (full-width), add <strong>width: 100%;</strong> to the table element.<br>
+        The <strong>height</strong> property is used to set the height of table-elements. e.g. height: 70px;<br>
         
+
     </p>
 </body>
 </html>
