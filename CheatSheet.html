@@ -20,7 +20,10 @@
         strong {
             background-color: rgb(241, 241, 119);
         }
-        
+        .unterüberschrift{
+            color: blue;
+            font-size: 20px;
+        }
         
     </style>
 </head>
@@ -132,8 +135,77 @@
         The <strong>border-collapse</strong> property sets whether the table borders should be collapsed into a single border. e.g. border-collapse: collapse;<br>
         If you want to create a table that should span the entire screen (full-width), add <strong>width: 100%;</strong> to the table element.<br>
         The <strong>height</strong> property is used to set the height of table-elements. e.g. height: 70px;<br>
-        
+        <h3>Classes and IDs</h3>
+        The <strong>.class selector</strong> selects elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the name of the class. e.g. &lt;p class="hometown"&gt;I live in Ducksburg.&lt;/p&gt; and p.hometown{} or .hometown{}<br>
+        The <strong>#id selector</strong> styles the element with the specific id. e.g. &lt;p id="firstname"&gt;My name is Donald.&lt;/p&gt; and #firstname {}<br>
+        The <strong>CSS Box Model</strong> is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.<br>
+        <img src="CSS Box Model.png" height="300"><br>
+        <ul>
+            <li><strong>Content</strong> - The content of the box, where text and images appear</li>
+            <li><strong>Padding</strong> - Clears an area around the content. The padding is transparent</li>
+            <li><strong>Border</strong> - A border that goes around the padding and content</li>
+            <li><strong>Margin</strong> - Clears an area outside the border. The margin is transparent</li>
+        </ul>
+        The box model allows us to add a border around elements, and to define space between elements. This would be a box model for example: div { width: 300px; border: 15px solid green; padding: 50px; margin: 20px; }<br>
+        <strong>Width and Height of an Element</strong><br>
+        <strong>Important: </strong>When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.<br>
+        <strong>Total element width </strong>= width + left padding + right padding + left border + right border + left margin + right margin<br>
+        <strong>Total element height </strong>= height + top padding + bottom padding + top border + bottom border + top margin + bottom margin<br>
+        <br>
+        <strong class="unterüberschrift">CSS Layout - Float and clear</strong><br>
+        The <strong>CSS float property</strong> specifies how an element should float. It is used for positioning and formattig content e.g. let an image float left to the text in a container. e.g. float: left; right; none; inherit;<br>
+        The <strong>CSS clear property</strong> specifies what elements can float beside the cleared element and on which side. This is used if we want the next element below (not on right or left). e.g. clear: none; left; right; both; inherit;<br>
 
+        <hr>
+        <h1>Graphic Formats</h1>
+
+        <h3>JPEG (or JPG)</h3>
+        <ul>
+            <li>supports photographic and realistic images</li>
+            <li>uses lossy compression, meaning that some image quality is lost when saving in this format</li>
+            <li>does not support animation</li>
+        </ul>
+        <h3>GIF</h3>
+        <ul>
+            <li>supports both graphics and images, but is best suited for simple graphics with a limited number of colors</li>
+            <li>uses lossless compression, meaning that no image quality is lost when saving in this format</li>
+            <li>supports animation</li>
+        </ul>
+        <h3>PNG</h3>
+        <ul>
+            <li>supports both graphics and images</li>
+            <li>uses lossless compression, meaning that no image quality is lost when saving in this format</li>
+            <li>does not support animation</li>
+        </ul>
+        <h3>ICO</h3>
+        <ul>
+            <li>used for icons on Windows operating systems</li>
+            <li>supports small graphics and images with a limited number of colors</li>
+            <li>uses lossless compression, meaning that no image quality is lost when saving in this format</li>
+            <li>does not support animation</li>
+        </ul>
+        <h3>SVG</h3>
+        <ul>
+            <li>used for scalable vector graphics (i.e. graphics that can be resized without losing quality)</li>
+            <li>does not use compression, but the file size is typically small due to the use of vector graphics</li>
+            <li>does not support animation</li>
+        </ul>
+        <h3>MPEG (or MPG) and MP4</h3>
+        <ul>
+            <li>used for video files</li>
+            <li>use lossy compression to reduce file size, but can be set to use higher quality (and larger file size)</li>
+            <li>support animation and motion pictures</li>
+        </ul>
+
+        <p style="font-weight: 700;">When deciding which graphic format to use, consider the following:</p>
+        <ul>
+            <li>For photographs and other high-quality realistic images, JPEG is a good choice because it uses lossy compression that preserves most of the image quality while still reducing the file size.</li>
+            <li>For simple graphics with a limited number of colors, GIF is a good choice because it uses lossless compression and supports animation.</li>
+            <li>For images that require transparency (e.g. logos), PNG is a good choice because it supports transparency and uses lossless compression.</li>
+            <li>For icons on Windows operating systems, ICO is a good choice because it uses lossless compression and is specifically designed for icons.</li>
+            <li>For scalable vector graphics, SVG is a good choice because it does not use compression and allows graphics to be resized without losing quality.</li>
+            <li>For video files, MPEG or MP4 is a good choice because it supports animation and motion pictures. The quality and file size can be adjusted depending on the needs of the project.</li>
+        </ul>
     </p>
 </body>
 </html>
