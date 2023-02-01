@@ -206,6 +206,48 @@
             <li>For scalable vector graphics, SVG is a good choice because it does not use compression and allows graphics to be resized without losing quality.</li>
             <li>For video files, MPEG or MP4 is a good choice because it supports animation and motion pictures. The quality and file size can be adjusted depending on the needs of the project.</li>
         </ul>
+
+
+        <hr>
+        <h1>CSS Gradients</h1>
+        Css <strong>gradients</strong> are represented by the <code>&lt;gradient&gt;</code> tag, a special type of <code>&lt;image&gt;</code> made of a progressive transition between two or more colors.<br>
+        You can choose between <strong>three types of gradients</strong>: linear, radial or conic. You can also create repeating gradients with the repeating-linear-gradient etc...<br>
+        
+        Gradients can be used anywhere you would use an image tag, such as in backgrounds.<br>
+        <br>
+        <strong class="unterüberschrift">Linear gradients</strong><br>
+        A linear gradient creates a band of colors that progress in a straight line.<br>
+        To create a basic type of gradient, you need to specify at least two colors, so called color stops. e.g. <strong>background: linear-gradient(blue, pink);</strong><br>
+        To change the <strong>direction</strong> from the default (top to bottom) you can change their rotation by specifying a direction. e.g. background: linear-gradient(to right, blue, pink); or you can give the gradient a specific angle e.g. background: linear-gradient(70deg, blue, pink)<br>
+        You can also use more colors, just add the colors in the specification. To tune the location of the <strong>color stops</strong>, you can give each one zero, one or two percentage or absolute length values.<br>
+        0 % starting point, 100% ending point. e.g. background: linear-gradient(to left, lime 28px, red 77%, cyan);<br>
+        Gradients support transparency, so you can stack multiple backgrounds to achieve some pretty fancy effects. They are stacked from top to bottom, with the first specified being on top. e.g. background: linear-gradient(to right, transparent, mistyrose), url("critters.png");<br>
+        <strong>Corners</strong> can be added with border-radius: 15px;
+        <strong>Shadows</strong> can be added with box-shadow: 10px 10px 5px #888888; first there is the horizontal offset, then the vertical offset, then the blur distance and the shadow color.<br>
+
+        <br>
+        <strong class="unterüberschrift">Radial gradients</strong><br>
+        Radial gradients are similar to linear gradients, except that they radiate out from a central point. You can change the position of the point and make them circular or elliptical.<br>
+        By default, the center of the gradient is at the 50% 50% mark, and the gradient is elliptical matching the aspect ration of it's box. e.g. background: <strong>radial-gradient(red, blue);</strong> <br>
+        You can position each radial color stop with a percentage or absolute length. e.g.background: radial-gradient(red 10px, yellow 30%, blue 50%);
+        To change the center of the gradient, background: radial-gradient(at 0% 30%, red 10px, yellow 30%, #1e90ff 50%); (Center links)<br>
+        
+        To size a radial gradient, you can specify the size of radial gradients (closest-corner, closest-side, fasthest-corner, farthest-side). e.g. background: radial-gradient(ellipse closest-side, red, yellow 10%, blue 50%, beige);
+    
+        <h1>Transitions</h1>
+        CSS Transitions allows property changes in CSS values to occur smoothly over a specified duration. Therefore the computed value of a property transitions over time from the old value to the new one.<br>
+        e.g. <strong>transition-property: opacity; transition-duration: 2s;</strong> 
+        <hr>
+
+        <h1>Positioning</h1>
+        The position property specifies the type of positioning method used for an element(static, relative, fixed, absolute or sticky). e.g. position: static;<br>
+        <ul>
+            <li><strong>Static: </strong>static positioned elements are not affected by the top, bottom, left and right properties. It's not positioned in any special way.</li>
+            <li><strong>Relative: </strong>is positioned relative to its normal position. Setting a top property or so will cause it to be adjusted away from its normal position.</li>
+            <li><strong>Fixed: </strong>is positioned relative to the viewport -> it always stays in the same place even if the page is scrolled.</li>
+            <li><strong>Absolute: </strong>is positioned relative to the nearest positioned ancestor.</li>
+            <li><strong>Sticky: </strong>is positioned based on the user's scroll position. It toggles between relative and fixed, depending on the scroll position. It stays always on top</li>
+        </ul>
     </p>
 </body>
 </html>
